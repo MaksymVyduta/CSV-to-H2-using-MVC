@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+<body>
+
+
+<table class="table table-striped">
+    <tr><th>Name </th><th>Email </th><th>PhoneNumber</th><th>Kick The Employee</th></tr>
+    <tr th:each="wpis: ${AllEmpl}">
+        <td th:text="${wpis.name}"> Name</td>
+        <td th:text="${wpis.email}">Email Adress</td>
+        <td th:text="${wpis.phoneNumber}">Phone Number</td>
+
+        <td><a href="#" th:href="@{/delete(id= ${wpis.id})}" class="btn btn-danger" >
+            <i class="fa fa-trash-o fa-lg" ></i>DELETE EMPLOYEE</a></td>
+</table>
+
+        <table class="table table-striped" >
+
+            <tr> <td><a href="#" th:href="@{/}" class="btn btn-success btn-lg">
+                <i class="fa fa-trash-o fa-lg" ></i>UPLOAD NEW CSV FILE </a></td></tr>
+        </table>
+
+</body>
+</html>
