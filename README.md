@@ -1,10 +1,8 @@
 # Instruction:
-1) Download the app.
-2) From the main menu, select File | New | Project from Existing Sources and choose the pom.xml file from the app catalog.
-3) Run the application.
-4)Open the webpage at http://localhost:9099/ and upload a CSV file. You can use the sample files Employees.csv and Employees2.csv, which are included in this repository.
+Open the webpage at http://localhost:9099/ and upload a CSV file. 
+You can use the sample files Employees.csv and Employees2.csv, which are included in this repository.
 
-he app is built on the Model-View-Controller (MVC) architectural/design pattern.
+The app is built on the Model-View-Controller (MVC) architectural/design pattern.
 
 Here's how it works:
 1) The application downloads the file uploaded by the user and saves it as "Employees". If a file with the same name already exists, it will be deleted and replaced with the new one.
